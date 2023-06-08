@@ -26,6 +26,10 @@ getUsername()
 function love.load()
   loadComponents()
   player.actualPosition = player.right
+  
+  slot.one = slot.slotImage
+  slot.two = slot.slotImage
+  slot.three = slot.slotImage
 end
 
 function love.update(dt)
@@ -103,6 +107,10 @@ function love.draw()
     cam:setPosition(player.x + 20, player.y + 20)
     cam:setScale(2.1)
   end)
+
+  love.graphics.draw(slot.one, 300, 470)
+  love.graphics.draw(slot.two, 400, 470)
+  love.graphics.draw(sword, 310, 480)
 end
 
 function love.keypressed(key, scancode, isRepeat)

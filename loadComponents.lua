@@ -12,6 +12,10 @@ function loadComponents()
   
   font.nameFont = love.graphics.newFont('fonts/nameFont.ttf')
   
+  slot.slotImage = love.graphics.newImage("images/slot.png")
+  
+  sword = love.graphics.newImage("images/sword.png")
+  
   --change filter for smoother texture
   player.right:setFilter("nearest", "nearest")
   player.left:setFilter('nearest', 'nearest')

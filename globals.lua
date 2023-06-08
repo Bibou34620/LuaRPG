@@ -2,6 +2,7 @@
 player = {}
 npc = {}
 font = {}
+slot = {}
 
 --player
 player.left = nil
@@ -27,5 +28,15 @@ npc.y = 100
 --font
 font.nameFont = nil
 
+--slot
+slot.slotImage = nil
+slot.one = nil
+slot.two = nil
+slot.three = nil
+slot.oneContent = nil
+slot.twoContent = nil
+slot.threeContent = nil
+
 --misc
 isWearing = false
+sword = nil
